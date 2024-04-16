@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "cypress": "^13.7.3"
+  },
+  "name": "ehosdevida_testes",
+  "version": "1.0.0",
+  "description": " ",
+  "main": " ",
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
