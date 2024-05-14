@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: testesAPI.RMRunner
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.724 s <<< FAILURE! - in testesAPI.RMRunner
+testesAPI/RM.[6:57] Deletando time pelo ID  Time elapsed: 0.032 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/12, response: 
+{"statusCode":500,"message":"Internal server error"}
+classpath:testesAPI/RM.feature:61
+
+testesAPI/RM.[8:70] Remove a member by email  Time elapsed: 1.033 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/team123/members, response: 
+{"statusCode":500,"message":"Internal server error"}
+classpath:testesAPI/RM.feature:75
+

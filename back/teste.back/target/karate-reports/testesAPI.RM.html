@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>testesAPI.RM</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-05-14 07:17:31 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Login e captura do token</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:14]"><span>[2:14]</span> <span>POST do USER (admin ou student)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:38]"><span>[3:38]</span> <span>GET do usuário por e-mail</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:44]"><span>[4:44]</span> <span>Get list of all teams</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:51]"><span>[5:51]</span> <span>Get team details</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[6:57]"><span>[6:57]</span> <span>Deletando time pelo ID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:63]"><span>[7:63]</span> <span>Get teams for a specific advisor</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[8:70]"><span>[8:70]</span> <span>Remove a member by email</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">testesAPI/RM.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testando API Fetin</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Login e captura do token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>498</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:17:30.079 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;amanda@ges.inatel.br&#39;, password: &#39;Fetin@2024&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">53</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">431</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">19:17:30.548 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;Fetin@2024&quot;,&quot;email&quot;:&quot;amanda@ges.inatel.br&quot;}
+
+19:17:30.606 response time in milliseconds: 51
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 660
+1 &lt; ETag: W/&quot;294-5hNpDxKjtf8Djv/W6Da9OGbYPiU&quot;
+1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+1 &lt; Set-Cookie: Authentication=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJuYW1lIjoiQW1hbmRhIiwiZW1haWwiOiJhbWFuZGFAZ2VzLmluYXRlbC5iciIsInBhc3N3b3JkIjoiJDJiJDEwJHFzWVA4SENkTHVWZmd6ckJSNmw2b2Vlc2VYeFY1cmJDSXpVN1BNTkRGMDl5aE9ueGhMa0E2Iiwicm9sZSI6InN0dWRlbnQiLCJ0ZWFtTnVtYmVyIjoiMTBBIiwiX192IjowLCJzdWIiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJpYXQiOjE3MTU3MjUwNTAsImV4cCI6MTcxNTk4NDI1MH0.DQjDE8sAi4qHFsYXNStYtk0g1q6rLYrIIo8dBTfEr8I; Domain=localhost
+{&quot;acessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJuYW1lIjoiQW1hbmRhIiwiZW1haWwiOiJhbWFuZGFAZ2VzLmluYXRlbC5iciIsInBhc3N3b3JkIjoiJDJiJDEwJHFzWVA4SENkTHVWZmd6ckJSNmw2b2Vlc2VYeFY1cmJDSXpVN1BNTkRGMDl5aE9ueGhMa0E2Iiwicm9sZSI6InN0dWRlbnQiLCJ0ZWFtTnVtYmVyIjoiMTBBIiwiX192IjowLCJzdWIiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJpYXQiOjE3MTU3MjUwNTAsImV4cCI6MTcxNTk4NDI1MH0.DQjDE8sAi4qHFsYXNStYtk0g1q6rLYrIIo8dBTfEr8I&quot;,&quot;user&quot;:{&quot;password&quot;:&quot;$2b$10$qsYP8HCdLuVfgzrBR6l6oeeseXxV5rbCIzU7PMNDF09yhOnxhLkA6&quot;,&quot;role&quot;:&quot;student&quot;,&quot;__v&quot;:0,&quot;name&quot;:&quot;Amanda&quot;,&quot;teamNumber&quot;:&quot;10A&quot;,&quot;_id&quot;:&quot;6643bbfdca0123091e0880a9&quot;,&quot;email&quot;:&quot;amanda@ges.inatel.br&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def token = response.acess_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:14]</span>
+                <span class="scenario-name">POST do USER (admin ou student)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>176</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:17:30.632 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomFirstName = function() { return karate.random(&#39;Ana&#39;, &#39;Julia&#39;, &#39;Amanda&#39;, &#39;Karol&#39;) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomLastName = function() { return karate.random(&#39;Smith&#39;, &#39;Jones&#39;, &#39;Taylor&#39;, &#39;Brown&#39;) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomRole = function() { return karate.randomItem([&#39;student&#39;, &#39;admin&#39;]) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomTeamNumber = function() { return &#39;&#39; + karate.random(1, 20) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomEmail = function(f, l) { return f.toLowerCase() + &#39;.&#39; + l.toLowerCase() + &#39;@example.com&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def User =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.21">{
+    name: &#39;#(randomFirstName())&#39;,
+    email: &#39;#(randomEmail(randomFirstName(),randomlastName()))&#39;,
+    role: &#39;#(randomRole())&#39;,
+    teamNumber: &#39;#(randomTeamNumber())&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request User</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">127</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">19:17:30.686 request:
+1 &gt; POST http://localhost:3000/users
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 154
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;role&quot;:&quot;#(randomRole())&quot;,&quot;name&quot;:&quot;#(randomFirstName())&quot;,&quot;teamNumber&quot;:&quot;#(randomTeamNumber())&quot;,&quot;email&quot;:&quot;#(randomEmail(randomFirstName(),randomlastName()))&quot;}
+
+19:17:30.808 response time in milliseconds: 122
+1 &lt; 201
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 269
+1 &lt; ETag: W/&quot;10d-uBsKCwfFggWOYFTcS/bXbXCZDZ8&quot;
+1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;password&quot;:&quot;$2b$10$MAdsFhQOaI8w0lN7nRDZ3OHZMB9QU6KaaKkZI.eeJB53jxEvO83uS&quot;,&quot;role&quot;:&quot;#(randomRole())&quot;,&quot;__v&quot;:0,&quot;name&quot;:&quot;#(randomFirstName())&quot;,&quot;teamNumber&quot;:&quot;#(randomTeamNumber())&quot;,&quot;_id&quot;:&quot;6643e2fac252f6f9e4195cb5&quot;,&quot;email&quot;:&quot;#(randomEmail(randomFirstName(),randomlastName()))&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:38]</span>
+                <span class="scenario-name">GET do usuário por e-mail</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>25</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:38]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:38]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:17:30.820 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/juri%40gmail.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">19:17:30.825 request:
+1 &gt; GET http://localhost:3000/users/juri%40gmail.com
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:17:30.846 response time in milliseconds: 20
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 173
+1 &lt; ETag: W/&quot;ad-KkKEIjtzdG7SbHhpKksYwPKses4&quot;
+1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;password&quot;:&quot;$2b$10$oSbCssMFXZhJ4HLPsSzatuk5oYvDstQOq3bANO0OZ\/PT5we36K5Ta&quot;,&quot;role&quot;:&quot;admin&quot;,&quot;__v&quot;:0,&quot;name&quot;:&quot;Jurandi&quot;,&quot;_id&quot;:&quot;66400883acfd6d2e7ae8c233&quot;,&quot;email&quot;:&quot;juri@gmail.com&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:44]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:44]</span>
+                <span class="scenario-name">Get list of all teams</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>13</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:44]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:44]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:17:30.859 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;teams&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">19:17:30.863 request:
+1 &gt; GET http://localhost:3000/teams
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:17:30.872 response time in milliseconds: 5
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 348
+1 &lt; ETag: W/&quot;15c-eajFXGLlY96GdQpZ6vP070yE280&quot;
+1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+[{&quot;number&quot;:&quot;12&quot;,&quot;delivery&quot;:[],&quot;createdAt&quot;:&quot;2024-05-14T21:40:07.697Z&quot;,&quot;members&quot;:[{&quot;name&quot;:&quot;Lucileia&quot;,&quot;email&quot;:&quot;luci@gmail.com&quot;}],&quot;__v&quot;:0,&quot;name&quot;:&quot;Rolezin&quot;,&quot;_id&quot;:&quot;6643da37c252f6f9e4195c6c&quot;,&quot;advisorName&quot;:&quot;Marcelo&quot;,&quot;extraActivities&quot;:[&quot;APP Inventor&quot;],&quot;advisorEmail&quot;:&quot;marcelo@gmail.com&quot;,&quot;status&quot;:&quot;Em Desenvolvimento&quot;,&quot;updatedAt&quot;:&quot;2024-05-14T21:40:07.697Z&quot;}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:51]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:51]</span>
+                <span class="scenario-name">Get team details</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>17</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:51]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:17:30.883 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;12&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.54">19:17:30.888 request:
+1 &gt; GET http://localhost:3000/teams/12
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:17:30.900 response time in milliseconds: 10
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 346
+1 &lt; ETag: W/&quot;15a-rjTfPwK5eu2UmSQXYoMvFUpzaZk&quot;
+1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;number&quot;:&quot;12&quot;,&quot;delivery&quot;:[],&quot;createdAt&quot;:&quot;2024-05-14T21:40:07.697Z&quot;,&quot;members&quot;:[{&quot;name&quot;:&quot;Lucileia&quot;,&quot;email&quot;:&quot;luci@gmail.com&quot;}],&quot;__v&quot;:0,&quot;name&quot;:&quot;Rolezin&quot;,&quot;_id&quot;:&quot;6643da37c252f6f9e4195c6c&quot;,&quot;advisorName&quot;:&quot;Marcelo&quot;,&quot;extraActivities&quot;:[&quot;APP Inventor&quot;],&quot;advisorEmail&quot;:&quot;marcelo@gmail.com&quot;,&quot;status&quot;:&quot;Em Desenvolvimento&quot;,&quot;updatedAt&quot;:&quot;2024-05-14T21:40:07.697Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:57]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:57]</span>
+                <span class="scenario-name">Deletando time pelo ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>14</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:57]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:57]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:17:30.912 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;12&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60">19:17:30.916 request:
+1 &gt; DELETE http://localhost:3000/teams/12
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:17:30.925 response time in milliseconds: 7
+1 &lt; 500
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 52
+1 &lt; ETag: W/&quot;34-rlKccw1E+/fV8niQk4oFitDfPro&quot;
+1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;message&quot;:&quot;Internal server error&quot;,&quot;statusCode&quot;:500}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref failed">61</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.61">19:17:30.927 classpath:testesAPI/RM.feature:61
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/12, response: 
+{&quot;statusCode&quot;:500,&quot;message&quot;:&quot;Internal server error&quot;}
+classpath:testesAPI/RM.feature:61
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:63]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:63]</span>
+                <span class="scenario-name">Get teams for a specific advisor</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>22</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:63]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:17:30.951 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;advisor&#39;, &#39;giovanni@rocket.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.66">19:17:30.957 request:
+1 &gt; GET http://localhost:3000/teams/advisor/giovanni@rocket.com
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:17:30.973 response time in milliseconds: 15
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2
+1 &lt; ETag: W/&quot;2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w&quot;
+1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+[]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:70]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:70]</span>
+                <span class="scenario-name">Remove a member by email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>17</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:70]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:70]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:17:30.990 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;team123&#39;, &#39;members&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request &#39;james@rocket.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.74">19:17:31.002 request:
+1 &gt; DELETE http://localhost:3000/teams/team123/members
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 16
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+james@rocket.com
+
+19:17:31.011 response time in milliseconds: 7
+1 &lt; 500
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 52
+1 &lt; ETag: W/&quot;34-rlKccw1E+/fV8niQk4oFitDfPro&quot;
+1 &lt; Date: Tue, 14 May 2024 22:17:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;message&quot;:&quot;Internal server error&quot;,&quot;statusCode&quot;:500}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref failed">75</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.75">19:17:31.012 classpath:testesAPI/RM.feature:75
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/team123/members, response: 
+{&quot;statusCode&quot;:500,&quot;message&quot;:&quot;Internal server error&quot;}
+classpath:testesAPI/RM.feature:75
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

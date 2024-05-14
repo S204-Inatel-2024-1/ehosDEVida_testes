@@ -1,0 +1,4 @@
+# Created at 2024-05-14T18:47:44.669
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Inatel\P7\S204\ehosDEVida_testes\back\teste.back\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
