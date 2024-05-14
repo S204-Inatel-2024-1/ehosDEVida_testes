@@ -83,19 +83,6 @@ https://maven.apache.org
 https://gitforwindows.org/
 
 
-## Configuração do Projeto
-
-Utilizaremos o maven (mvn) para fazer a instalação do Karate via terminal. A seguinte linha de código cria esse arquivo seguindo os parâmetros necessários:
-
-```
-mvn archetype:generate \
--DarchetypeGroupId=com.intuit.karate \
--DarchetypeArtifactId=karate-archetype \
--DarchetypeVersion=1.0.1 \
--DgroupId=s206.trabalho \
--DartifactId=s206_trabalho
-```
-
 ## Executando os Testes
 
 Para executar os testes, basta rodar a seguinte linha no terminal:
