@@ -107,5 +107,5 @@ O arquivo RM.feature contem todos os testes a serem realizados.
 
 ## Relatórios de Teste
 
-Após a execução dos testes, você pode encontrar os relatórios de teste no diretório `\s206_trabalho\target\karate-reports\testesAPI.RM.html`. Basta abrir este arquivo no navegador para visualizar o resultado dos testes.
+Após a execução dos testes, você pode encontrar os relatórios de teste no diretório `\target\karate-reports\testesAPI.RM.html`. Basta abrir este arquivo no navegador para visualizar o resultado dos testes.
 
