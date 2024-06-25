@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2024-05-14 07:17:31 PM</div>
+    <div>2024-06-25 03:43:26 PM</div>
   </div>        
 </div>
 
@@ -38,11 +38,11 @@
           <div class="nav-item passed">
             <a href="#[1:6]"><span>[1:6]</span> <span>Login e captura do token</span></a>
           </div>
-          <div class="nav-item passed">
-            <a href="#[2:14]"><span>[2:14]</span> <span>POST do USER (admin ou student)</span></a>
+          <div class="nav-item failed">
+            <a href="#[2:13]"><span>[2:13]</span> <span>POST do USER (admin ou student)</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[3:38]"><span>[3:38]</span> <span>GET do usuário por e-mail</span></a>
+            <a href="#[3:37]"><span>[3:37]</span> <span>GET do usuário por e-mail</span></a>
           </div>
           <div class="nav-item passed">
             <a href="#[4:44]"><span>[4:44]</span> <span>Get list of all teams</span></a>
@@ -56,8 +56,8 @@
           <div class="nav-item passed">
             <a href="#[7:63]"><span>[7:63]</span> <span>Get teams for a specific advisor</span></a>
           </div>
-          <div class="nav-item failed">
-            <a href="#[8:70]"><span>[8:70]</span> <span>Remove a member by email</span></a>
+          <div class="nav-item passed">
+            <a href="#[8:70]"><span>[8:70]</span> <span>Get teams for a specific student</span></a>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>498</span>
+              <span>ms:</span>&nbsp;<span>1347</span>
             </div>
           </div>
           <div class="step-row">
@@ -103,7 +103,7 @@
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+        <span>*</span>&nbsp;<span>url &#39;https://ehosdevida-backend.onrender.com/&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -115,7 +115,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">19:17:30.079 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">15:43:21.892 karate.env system property was: null 
 </div>   
 
   
@@ -135,7 +135,7 @@
         <span>Given</span>&nbsp;<span>path &#39;auth/login&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -160,10 +160,10 @@
       <div class="step-ref passed">8</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { email: &#39;amanda@ges.inatel.br&#39;, password: &#39;Fetin@2024&#39; }</span>
+        <span>And</span>&nbsp;<span>request { email: &#39;felipe@inatel.com&#39;, password: &#39;Fetin@2024&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">53</div>
+    <div class="time-cell passed">56</div>
   </div>
 
    
@@ -191,7 +191,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">431</div>
+    <div class="time-cell passed">1278</div>
   </div>
 
    
@@ -200,28 +200,33 @@
 
   
 
-  <div class="preformatted" data-parent="0.9">19:17:30.548 request:
-1 &gt; POST http://localhost:3000/auth/login
+  <div class="preformatted" data-parent="0.9">15:43:22.264 request:
+1 &gt; POST https://ehosdevida-backend.onrender.com/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 56
-1 &gt; Host: localhost:3000
+1 &gt; Content-Length: 53
+1 &gt; Host: ehosdevida-backend.onrender.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;password&quot;:&quot;Fetin@2024&quot;,&quot;email&quot;:&quot;amanda@ges.inatel.br&quot;}
+{&quot;password&quot;:&quot;Fetin@2024&quot;,&quot;email&quot;:&quot;felipe@inatel.com&quot;}
 
-19:17:30.606 response time in milliseconds: 51
+15:43:23.264 response time in milliseconds: 996
 1 &lt; 201
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Date: Tue, 25 Jun 2024 18:43:21 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 660
-1 &lt; ETag: W/&quot;294-5hNpDxKjtf8Djv/W6Da9OGbYPiU&quot;
-1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
 1 &lt; Connection: keep-alive
-1 &lt; Keep-Alive: timeout=5
-1 &lt; Set-Cookie: Authentication=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJuYW1lIjoiQW1hbmRhIiwiZW1haWwiOiJhbWFuZGFAZ2VzLmluYXRlbC5iciIsInBhc3N3b3JkIjoiJDJiJDEwJHFzWVA4SENkTHVWZmd6ckJSNmw2b2Vlc2VYeFY1cmJDSXpVN1BNTkRGMDl5aE9ueGhMa0E2Iiwicm9sZSI6InN0dWRlbnQiLCJ0ZWFtTnVtYmVyIjoiMTBBIiwiX192IjowLCJzdWIiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJpYXQiOjE3MTU3MjUwNTAsImV4cCI6MTcxNTk4NDI1MH0.DQjDE8sAi4qHFsYXNStYtk0g1q6rLYrIIo8dBTfEr8I; Domain=localhost
-{&quot;acessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJuYW1lIjoiQW1hbmRhIiwiZW1haWwiOiJhbWFuZGFAZ2VzLmluYXRlbC5iciIsInBhc3N3b3JkIjoiJDJiJDEwJHFzWVA4SENkTHVWZmd6ckJSNmw2b2Vlc2VYeFY1cmJDSXpVN1BNTkRGMDl5aE9ueGhMa0E2Iiwicm9sZSI6InN0dWRlbnQiLCJ0ZWFtTnVtYmVyIjoiMTBBIiwiX192IjowLCJzdWIiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJpYXQiOjE3MTU3MjUwNTAsImV4cCI6MTcxNTk4NDI1MH0.DQjDE8sAi4qHFsYXNStYtk0g1q6rLYrIIo8dBTfEr8I&quot;,&quot;user&quot;:{&quot;password&quot;:&quot;$2b$10$qsYP8HCdLuVfgzrBR6l6oeeseXxV5rbCIzU7PMNDF09yhOnxhLkA6&quot;,&quot;role&quot;:&quot;student&quot;,&quot;__v&quot;:0,&quot;name&quot;:&quot;Amanda&quot;,&quot;teamNumber&quot;:&quot;10A&quot;,&quot;_id&quot;:&quot;6643bbfdca0123091e0880a9&quot;,&quot;email&quot;:&quot;amanda@ges.inatel.br&quot;}}
+1 &lt; CF-Ray: 89971a496920a4d1-GRU
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;261-3FekCOzYjEdVscI0s/zSfemsBfY&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; rndr-id: d94ed009-f8b0-43e6
+1 &lt; x-powered-by: Express
+1 &lt; x-render-origin-server: Render
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; Set-Cookie: Authentication=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZjc0N2VmZDVlYWY5ODQ2NmRmZGYiLCJuYW1lIjoiRmVsaXBlIiwiZW1haWwiOiJmZWxpcGVAaW5hdGVsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJDJBOXU4SllZS1dtQ3IzcWh0QTgxUE9SUHZld2tXL2F6RXFWd25RczFRRUU4TFA4OWIzQ3IuIiwicm9sZSI6ImFkdmlzb3IiLCJfX3YiOjAsInN1YiI6IjY2NmRmNzQ3ZWZkNWVhZjk4NDY2ZGZkZiIsImlhdCI6MTcxOTM0MTAwMSwiZXhwIjoxNzE5NjAwMjAxfQ.jL1lr94pPfZfLtO6kfow48FIN9iajfSkLhqnCLPIxkU; Domain=ehosdevida-backend.onrender.com
+{&quot;acessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZjc0N2VmZDVlYWY5ODQ2NmRmZGYiLCJuYW1lIjoiRmVsaXBlIiwiZW1haWwiOiJmZWxpcGVAaW5hdGVsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJDJBOXU4SllZS1dtQ3IzcWh0QTgxUE9SUHZld2tXL2F6RXFWd25RczFRRUU4TFA4OWIzQ3IuIiwicm9sZSI6ImFkdmlzb3IiLCJfX3YiOjAsInN1YiI6IjY2NmRmNzQ3ZWZkNWVhZjk4NDY2ZGZkZiIsImlhdCI6MTcxOTM0MTAwMSwiZXhwIjoxNzE5NjAwMjAxfQ.jL1lr94pPfZfLtO6kfow48FIN9iajfSkLhqnCLPIxkU&quot;,&quot;user&quot;:{&quot;password&quot;:&quot;$2b$10$2A9u8JYYKWmCr3qhtA81PORPvewkW\/azEqVwnQs1QEE8LP89b3Cr.&quot;,&quot;role&quot;:&quot;advisor&quot;,&quot;__v&quot;:0,&quot;name&quot;:&quot;Felipe&quot;,&quot;_id&quot;:&quot;666df747efd5eaf98466dfdf&quot;,&quot;email&quot;:&quot;felipe@inatel.com&quot;}}
 </div>   
 
   
@@ -266,10 +271,10 @@
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>def token = response.acess_token</span>
+        <span>And</span>&nbsp;<span>def token = response.acess_Token</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -286,29 +291,29 @@
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:14]">
+          <div class="scenario-heading" id="[2:13]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:14]</span>
+                Scenario: <span>[2:13]</span>
                 <span class="scenario-name">POST do USER (admin ou student)</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>176</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>364</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:14]bg">
+            <div class="step-container" id="[2:13]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:14]bg"><div>
+          <div data-parent="[2:13]bg"><div>
   
 
   
@@ -318,7 +323,7 @@
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+        <span>*</span>&nbsp;<span>url &#39;https://ehosdevida-backend.onrender.com/&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -330,8 +335,36 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">19:17:30.632 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">15:43:23.284 karate.env system property was: null 
 </div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomItem = function(arr) { return arr[Math.floor(Math.random() * arr.length)]; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
 
   
 
@@ -347,159 +380,23 @@
       <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomFirstName = function() { return karate.random(&#39;Ana&#39;, &#39;Julia&#39;, &#39;Amanda&#39;, &#39;Karol&#39;) }</span>
+        <span>*</span>&nbsp;<span>def criarUsuario =</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">19</div>
   </div>
 
    
   
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomLastName = function() { return karate.random(&#39;Smith&#39;, &#39;Jones&#39;, &#39;Taylor&#39;, &#39;Brown&#39;) }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomRole = function() { return karate.randomItem([&#39;student&#39;, &#39;admin&#39;]) }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomTeamNumber = function() { return &#39;&#39; + karate.random(1, 20) }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">8</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomEmail = function(f, l) { return f.toLowerCase() + &#39;.&#39; + l.toLowerCase() + &#39;@example.com&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref passed">21</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def User =</span>
-      </div>
-    </div>
-    <div class="time-cell passed">33</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="0.21">{
-    name: &#39;#(randomFirstName())&#39;,
-    email: &#39;#(randomEmail(randomFirstName(),randomlastName()))&#39;,
-    role: &#39;#(randomRole())&#39;,
-    teamNumber: &#39;#(randomTeamNumber())&#39;
+  <div class="preformatted" data-parent="0.15">function() {
+let horas = java.lang.System.currentTimeMillis() / 3600000 % 24
+let minutos = java.lang.System.currentTimeMillis() / 60000 % 60
+let segundos = java.lang.System.currentTimeMillis() / 1000 % 60
+let user = horas + minutos + segundos + &#39;@inatel.com&#39;
+let senha = &#39;Fetin@2024&#39;        
+let papel = randomItem([&#39;student&#39;, &#39;admin&#39;,&#39;advisor&#39;])
+let teamNumber = Math.floor(Math.random() * 20) + 1 // generate a random team number between 1 and 20        
+return { username: user, password: senha, role: papel, teamNumber: teamNumber}
 }</div>
 
   
@@ -516,8 +413,36 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.31">
-      <div class="step-ref passed">31</div>
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def usuarioInfo = criarUsuario()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
@@ -544,14 +469,42 @@
   
 
   <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
     <div class="step-container" id="0.32">
       <div class="step-ref passed">32</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+        <span>And</span>&nbsp;<span>request usuarioInfo</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -576,10 +529,10 @@
       <div class="step-ref passed">33</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request User</span>
+        <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">314</div>
   </div>
 
    
@@ -588,7 +541,34 @@
 
   
 
-     
+  <div class="preformatted" data-parent="0.33">15:43:23.336 request:
+1 &gt; POST https://ehosdevida-backend.onrender.com/users
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 98
+1 &gt; Host: ehosdevida-backend.onrender.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;Fetin@2024&quot;,&quot;role&quot;:&quot;admin&quot;,&quot;teamNumber&quot;:18,&quot;username&quot;:&quot;85.43382780515822@inatel.com&quot;}
+
+15:43:23.648 response time in milliseconds: 312
+1 &lt; 500
+1 &lt; Date: Tue, 25 Jun 2024 18:43:22 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: 89971a4f3df2af5f-GRU
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;34-rlKccw1E+/fV8niQk4oFitDfPro&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; rndr-id: 10e609a3-ad33-4bb6
+1 &lt; x-powered-by: Express
+1 &lt; x-render-origin-server: Render
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;message&quot;:&quot;Internal server error&quot;,&quot;statusCode&quot;:500}
+</div>   
 
   
 
@@ -601,13 +581,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.34">
-      <div class="step-ref passed">34</div>
+      <div class="step-ref failed">34</div>
       
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">127</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -616,28 +596,64 @@
 
   
 
-  <div class="preformatted" data-parent="0.34">19:17:30.686 request:
-1 &gt; POST http://localhost:3000/users
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 154
-1 &gt; Host: localhost:3000
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;role&quot;:&quot;#(randomRole())&quot;,&quot;name&quot;:&quot;#(randomFirstName())&quot;,&quot;teamNumber&quot;:&quot;#(randomTeamNumber())&quot;,&quot;email&quot;:&quot;#(randomEmail(randomFirstName(),randomlastName()))&quot;}
+  <div class="preformatted" data-parent="0.34">15:43:23.650 classpath:testesAPI/RM.feature:34
+Then status 201
+status code was: 500, expected: 201, response time in milliseconds: 312, url: https://ehosdevida-backend.onrender.com/users, response: 
+{&quot;statusCode&quot;:500,&quot;message&quot;:&quot;Internal server error&quot;}
+classpath:testesAPI/RM.feature:34
+</div>   
 
-19:17:30.808 response time in milliseconds: 122
-1 &lt; 201
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 269
-1 &lt; ETag: W/&quot;10d-uBsKCwfFggWOYFTcS/bXbXCZDZ8&quot;
-1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
-1 &lt; Connection: keep-alive
-1 &lt; Keep-Alive: timeout=5
-{&quot;password&quot;:&quot;$2b$10$MAdsFhQOaI8w0lN7nRDZ3OHZMB9QU6KaaKkZI.eeJB53jxEvO83uS&quot;,&quot;role&quot;:&quot;#(randomRole())&quot;,&quot;__v&quot;:0,&quot;name&quot;:&quot;#(randomFirstName())&quot;,&quot;teamNumber&quot;:&quot;#(randomTeamNumber())&quot;,&quot;_id&quot;:&quot;6643e2fac252f6f9e4195cb5&quot;,&quot;email&quot;:&quot;#(randomEmail(randomFirstName(),randomlastName()))&quot;}
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:37]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:37]</span>
+                <span class="scenario-name">GET do usuário por e-mail</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>504</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:37]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://ehosdevida-backend.onrender.com/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:43:23.666 karate.env system property was: null 
 </div>   
 
   
@@ -650,11 +666,11 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
+        <span>Given</span>&nbsp;<span>url &#39;https://ehosdevida-backend.onrender.com&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -667,59 +683,6 @@
   
 
      
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[3:38]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[3:38]</span>
-                <span class="scenario-name">GET do usuário por e-mail</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>25</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[3:38]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[3:38]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.4">19:17:30.820 karate.env system property was: null 
-</div>   
 
   
 
@@ -735,10 +698,10 @@
       <div class="step-ref passed">39</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;users/juri%40gmail.com&#39;</span>
+        <span>And</span>&nbsp;<span>path &#39;users/a@inatel.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -763,7 +726,7 @@
       <div class="step-ref passed">40</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -791,10 +754,10 @@
       <div class="step-ref passed">41</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method get</span>
+        <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">24</div>
+    <div class="time-cell passed">503</div>
   </div>
 
    
@@ -803,26 +766,31 @@
 
   
 
-  <div class="preformatted" data-parent="0.41">19:17:30.825 request:
-1 &gt; GET http://localhost:3000/users/juri%40gmail.com
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 &gt; Host: localhost:3000
+  <div class="preformatted" data-parent="0.41">15:43:23.669 request:
+1 &gt; GET https://ehosdevida-backend.onrender.com/users/a@inatel.com
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 &gt; Host: ehosdevida-backend.onrender.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-19:17:30.846 response time in milliseconds: 20
+15:43:24.171 response time in milliseconds: 501
 1 &lt; 200
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Date: Tue, 25 Jun 2024 18:43:22 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 173
-1 &lt; ETag: W/&quot;ad-KkKEIjtzdG7SbHhpKksYwPKses4&quot;
-1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
 1 &lt; Connection: keep-alive
-1 &lt; Keep-Alive: timeout=5
-{&quot;password&quot;:&quot;$2b$10$oSbCssMFXZhJ4HLPsSzatuk5oYvDstQOq3bANO0OZ\/PT5we36K5Ta&quot;,&quot;role&quot;:&quot;admin&quot;,&quot;__v&quot;:0,&quot;name&quot;:&quot;Jurandi&quot;,&quot;_id&quot;:&quot;66400883acfd6d2e7ae8c233&quot;,&quot;email&quot;:&quot;juri@gmail.com&quot;}
+1 &lt; CF-Ray: 89971a514a83031a-GRU
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;a7-vPXUZbCJmZmTSkSq6DkKqEJ2FGM&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; rndr-id: 7d8a4fa9-a4cd-441b
+1 &lt; x-powered-by: Express
+1 &lt; x-render-origin-server: Render
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;password&quot;:&quot;$2b$10$P9JRcMgBpY5F3MHl3vbHB.9YpH7ZaCp915.Y0GE.J.Z\/o9Q25dOKO&quot;,&quot;role&quot;:&quot;student&quot;,&quot;__v&quot;:0,&quot;name&quot;:&quot;a&quot;,&quot;_id&quot;:&quot;666df748efd5eaf98466dfe7&quot;,&quot;email&quot;:&quot;a@inatel.com&quot;}
 </div>   
 
   
@@ -871,7 +839,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>13</span>
+              <span>ms:</span>&nbsp;<span>536</span>
             </div>
           </div>
           <div class="step-row">
@@ -891,10 +859,10 @@
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+        <span>*</span>&nbsp;<span>url &#39;https://ehosdevida-backend.onrender.com/&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -903,7 +871,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">19:17:30.859 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">15:43:24.201 karate.env system property was: null 
 </div>   
 
   
@@ -948,7 +916,7 @@
       <div class="step-ref passed">46</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -979,7 +947,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">534</div>
   </div>
 
    
@@ -988,26 +956,31 @@
 
   
 
-  <div class="preformatted" data-parent="0.47">19:17:30.863 request:
-1 &gt; GET http://localhost:3000/teams
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 &gt; Host: localhost:3000
+  <div class="preformatted" data-parent="0.47">15:43:24.206 request:
+1 &gt; GET https://ehosdevida-backend.onrender.com/teams
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 &gt; Host: ehosdevida-backend.onrender.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-19:17:30.872 response time in milliseconds: 5
+15:43:24.737 response time in milliseconds: 530
 1 &lt; 200
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Date: Tue, 25 Jun 2024 18:43:23 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 348
-1 &lt; ETag: W/&quot;15c-eajFXGLlY96GdQpZ6vP070yE280&quot;
-1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
 1 &lt; Connection: keep-alive
-1 &lt; Keep-Alive: timeout=5
-[{&quot;number&quot;:&quot;12&quot;,&quot;delivery&quot;:[],&quot;createdAt&quot;:&quot;2024-05-14T21:40:07.697Z&quot;,&quot;members&quot;:[{&quot;name&quot;:&quot;Lucileia&quot;,&quot;email&quot;:&quot;luci@gmail.com&quot;}],&quot;__v&quot;:0,&quot;name&quot;:&quot;Rolezin&quot;,&quot;_id&quot;:&quot;6643da37c252f6f9e4195c6c&quot;,&quot;advisorName&quot;:&quot;Marcelo&quot;,&quot;extraActivities&quot;:[&quot;APP Inventor&quot;],&quot;advisorEmail&quot;:&quot;marcelo@gmail.com&quot;,&quot;status&quot;:&quot;Em Desenvolvimento&quot;,&quot;updatedAt&quot;:&quot;2024-05-14T21:40:07.697Z&quot;}]
+1 &lt; CF-Ray: 89971a54acdea466-GRU
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;424-x3a5rP5n6YRGiA5j3Lc+7j+JdMA&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; rndr-id: 71f4ee79-3bbf-4fcb
+1 &lt; x-powered-by: Express
+1 &lt; x-render-origin-server: Render
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;number&quot;:&quot;123&quot;,&quot;createdAt&quot;:&quot;2024-06-15T20:19:20.064Z&quot;,&quot;members&quot;:[{&quot;name&quot;:&quot;y&quot;,&quot;email&quot;:&quot;a@inatel.com&quot;},{&quot;name&quot;:&quot;b&quot;,&quot;email&quot;:&quot;b@inatel.com&quot;},{&quot;email&quot;:&quot;c@inatel.com&quot;},{&quot;name&quot;:&quot;d&quot;,&quot;email&quot;:&quot;d@inatel.com&quot;}],&quot;__v&quot;:0,&quot;name&quot;:&quot;HPF&quot;,&quot;_id&quot;:&quot;666df748efd5eaf98466dfe1&quot;,&quot;advisorName&quot;:&quot;Felipe&quot;,&quot;extraActivities&quot;:[],&quot;grades&quot;:[{&quot;currentPhase&quot;:&quot;1&quot;,&quot;grade&quot;:10},{&quot;currentPhase&quot;:&quot;2&quot;,&quot;grade&quot;:8}],&quot;phases&quot;:[{&quot;currentPhase&quot;:&quot;1&quot;,&quot;deadline&quot;:&quot;10\/07\/2024&quot;,&quot;issues&quot;:[&quot;ideia&quot;,&quot; validação&quot;]},{&quot;currentPhase&quot;:&quot;2&quot;,&quot;deadline&quot;:&quot;10\/08\/2024&quot;,&quot;issues&quot;:[&quot;front&quot;,&quot; back&quot;,&quot; testes&quot;]}],&quot;advisorEmail&quot;:&quot;felipe@inatel.com&quot;,&quot;updatedAt&quot;:&quot;2024-06-25T01:08:53.079Z&quot;},{&quot;number&quot;:&quot;10&quot;,&quot;createdAt&quot;:&quot;2024-06-25T00:45:38.846Z&quot;,&quot;members&quot;:[{&quot;name&quot;:&quot;Ana Luiza&quot;,&quot;email&quot;:&quot;a@inatel.com&quot;},{&quot;name&quot;:&quot;Mateus Rodrigues&quot;,&quot;email&quot;:&quot;a@inatel.com&quot;},{&quot;email&quot;:&quot;a@inatel.com&quot;},{&quot;name&quot;:&quot;Jessica Jones&quot;,&quot;email&quot;:&quot;a@inatel.com&quot;}],&quot;__v&quot;:0,&quot;name&quot;:&quot;Smart House&quot;,&quot;_id&quot;:&quot;667a133210e1a84099bac4ee&quot;,&quot;advisorName&quot;:&quot;Jurandir&quot;,&quot;extraActivities&quot;:[],&quot;grades&quot;:[],&quot;phases&quot;:[],&quot;advisorEmail&quot;:&quot;admin@inatel.com&quot;,&quot;updatedAt&quot;:&quot;2024-06-25T00:45:38.846Z&quot;}]
 </div>   
 
   
@@ -1056,7 +1029,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>17</span>
+              <span>ms:</span>&nbsp;<span>493</span>
             </div>
           </div>
           <div class="step-row">
@@ -1076,7 +1049,7 @@
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+        <span>*</span>&nbsp;<span>url &#39;https://ehosdevida-backend.onrender.com/&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1088,7 +1061,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">19:17:30.883 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">15:43:24.751 karate.env system property was: null 
 </div>   
 
   
@@ -1105,10 +1078,10 @@
       <div class="step-ref passed">52</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;12&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;HPF&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1133,7 +1106,7 @@
       <div class="step-ref passed">53</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1164,7 +1137,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">15</div>
+    <div class="time-cell passed">492</div>
   </div>
 
    
@@ -1173,26 +1146,30 @@
 
   
 
-  <div class="preformatted" data-parent="0.54">19:17:30.888 request:
-1 &gt; GET http://localhost:3000/teams/12
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 &gt; Host: localhost:3000
+  <div class="preformatted" data-parent="0.54">15:43:24.754 request:
+1 &gt; GET https://ehosdevida-backend.onrender.com/teams/HPF
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 &gt; Host: ehosdevida-backend.onrender.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-19:17:30.900 response time in milliseconds: 10
+15:43:25.244 response time in milliseconds: 490
 1 &lt; 200
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 346
-1 &lt; ETag: W/&quot;15a-rjTfPwK5eu2UmSQXYoMvFUpzaZk&quot;
-1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
+1 &lt; Date: Tue, 25 Jun 2024 18:43:23 GMT
+1 &lt; Content-Length: 0
 1 &lt; Connection: keep-alive
-1 &lt; Keep-Alive: timeout=5
-{&quot;number&quot;:&quot;12&quot;,&quot;delivery&quot;:[],&quot;createdAt&quot;:&quot;2024-05-14T21:40:07.697Z&quot;,&quot;members&quot;:[{&quot;name&quot;:&quot;Lucileia&quot;,&quot;email&quot;:&quot;luci@gmail.com&quot;}],&quot;__v&quot;:0,&quot;name&quot;:&quot;Rolezin&quot;,&quot;_id&quot;:&quot;6643da37c252f6f9e4195c6c&quot;,&quot;advisorName&quot;:&quot;Marcelo&quot;,&quot;extraActivities&quot;:[&quot;APP Inventor&quot;],&quot;advisorEmail&quot;:&quot;marcelo@gmail.com&quot;,&quot;status&quot;:&quot;Em Desenvolvimento&quot;,&quot;updatedAt&quot;:&quot;2024-05-14T21:40:07.697Z&quot;}
+1 &lt; CF-Ray: 89971a580bd70118-GRU
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; rndr-id: 6f75e4ad-7b4c-4b1b
+1 &lt; x-powered-by: Express
+1 &lt; x-render-origin-server: Render
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+
 </div>   
 
   
@@ -1241,7 +1218,7 @@
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>14</span>
+              <span>ms:</span>&nbsp;<span>294</span>
             </div>
           </div>
           <div class="step-row">
@@ -1261,7 +1238,7 @@
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+        <span>*</span>&nbsp;<span>url &#39;https://ehosdevida-backend.onrender.com/&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1273,7 +1250,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">19:17:30.912 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">15:43:25.252 karate.env system property was: null 
 </div>   
 
   
@@ -1290,10 +1267,10 @@
       <div class="step-ref passed">58</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;12&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1318,7 +1295,7 @@
       <div class="step-ref passed">59</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1349,7 +1326,7 @@
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">13</div>
+    <div class="time-cell passed">293</div>
   </div>
 
    
@@ -1358,26 +1335,31 @@
 
   
 
-  <div class="preformatted" data-parent="0.60">19:17:30.916 request:
-1 &gt; DELETE http://localhost:3000/teams/12
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 &gt; Host: localhost:3000
+  <div class="preformatted" data-parent="0.60">15:43:25.254 request:
+1 &gt; DELETE https://ehosdevida-backend.onrender.com/teams/
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 &gt; Host: ehosdevida-backend.onrender.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-19:17:30.925 response time in milliseconds: 7
-1 &lt; 500
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
+15:43:25.546 response time in milliseconds: 291
+1 &lt; 404
+1 &lt; Date: Tue, 25 Jun 2024 18:43:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 52
-1 &lt; ETag: W/&quot;34-rlKccw1E+/fV8niQk4oFitDfPro&quot;
-1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
 1 &lt; Connection: keep-alive
-1 &lt; Keep-Alive: timeout=5
-{&quot;message&quot;:&quot;Internal server error&quot;,&quot;statusCode&quot;:500}
+1 &lt; CF-Ray: 89971a5b2dc4af50-GRU
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;48-cKoNVgR3Ub0+WQTiaptIg7t+mzU&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; rndr-id: 357ca098-27cc-4bc9
+1 &lt; x-powered-by: Express
+1 &lt; x-render-origin-server: Render
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;message&quot;:&quot;Cannot DELETE \/teams\/&quot;,&quot;error&quot;:&quot;Not Found&quot;,&quot;statusCode&quot;:404}
 </div>   
 
   
@@ -1406,10 +1388,10 @@
 
   
 
-  <div class="preformatted" data-parent="0.61">19:17:30.927 classpath:testesAPI/RM.feature:61
+  <div class="preformatted" data-parent="0.61">15:43:25.546 classpath:testesAPI/RM.feature:61
 Then status 200
-status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/12, response: 
-{&quot;statusCode&quot;:500,&quot;message&quot;:&quot;Internal server error&quot;}
+status code was: 404, expected: 200, response time in milliseconds: 291, url: https://ehosdevida-backend.onrender.com/teams/, response: 
+{&quot;message&quot;:&quot;Cannot DELETE /teams/&quot;,&quot;error&quot;:&quot;Not Found&quot;,&quot;statusCode&quot;:404}
 classpath:testesAPI/RM.feature:61
 </div>   
 
@@ -1431,7 +1413,7 @@ classpath:testesAPI/RM.feature:61
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>22</span>
+              <span>ms:</span>&nbsp;<span>504</span>
             </div>
           </div>
           <div class="step-row">
@@ -1451,7 +1433,7 @@ classpath:testesAPI/RM.feature:61
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+        <span>*</span>&nbsp;<span>url &#39;https://ehosdevida-backend.onrender.com/&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1463,7 +1445,7 @@ classpath:testesAPI/RM.feature:61
 
   
 
-  <div class="preformatted" data-parent="0.4">19:17:30.951 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">15:43:25.553 karate.env system property was: null 
 </div>   
 
   
@@ -1480,7 +1462,7 @@ classpath:testesAPI/RM.feature:61
       <div class="step-ref passed">64</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;advisor&#39;, &#39;giovanni@rocket.com&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;advisor&#39;, &#39;felipe@inatel.com&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -1508,7 +1490,7 @@ classpath:testesAPI/RM.feature:61
       <div class="step-ref passed">65</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1539,7 +1521,7 @@ classpath:testesAPI/RM.feature:61
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">20</div>
+    <div class="time-cell passed">503</div>
   </div>
 
    
@@ -1548,26 +1530,31 @@ classpath:testesAPI/RM.feature:61
 
   
 
-  <div class="preformatted" data-parent="0.66">19:17:30.957 request:
-1 &gt; GET http://localhost:3000/teams/advisor/giovanni@rocket.com
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 &gt; Host: localhost:3000
+  <div class="preformatted" data-parent="0.66">15:43:25.557 request:
+1 &gt; GET https://ehosdevida-backend.onrender.com/teams/advisor/felipe@inatel.com
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 &gt; Host: ehosdevida-backend.onrender.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-19:17:30.973 response time in milliseconds: 15
+15:43:26.056 response time in milliseconds: 499
 1 &lt; 200
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Date: Tue, 25 Jun 2024 18:43:24 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 2
-1 &lt; ETag: W/&quot;2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w&quot;
-1 &lt; Date: Tue, 14 May 2024 22:17:30 GMT
 1 &lt; Connection: keep-alive
-1 &lt; Keep-Alive: timeout=5
-[]
+1 &lt; CF-Ray: 89971a5d1f0f0134-GRU
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;26c-WK5VD5PF/7ChsUutf2TpWnP+v40&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; rndr-id: 13f59268-5bdf-490a
+1 &lt; x-powered-by: Express
+1 &lt; x-render-origin-server: Render
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;number&quot;:&quot;123&quot;,&quot;createdAt&quot;:&quot;2024-06-15T20:19:20.064Z&quot;,&quot;members&quot;:[{&quot;name&quot;:&quot;y&quot;,&quot;email&quot;:&quot;a@inatel.com&quot;},{&quot;name&quot;:&quot;b&quot;,&quot;email&quot;:&quot;b@inatel.com&quot;},{&quot;email&quot;:&quot;c@inatel.com&quot;},{&quot;name&quot;:&quot;d&quot;,&quot;email&quot;:&quot;d@inatel.com&quot;}],&quot;__v&quot;:0,&quot;name&quot;:&quot;HPF&quot;,&quot;_id&quot;:&quot;666df748efd5eaf98466dfe1&quot;,&quot;advisorName&quot;:&quot;Felipe&quot;,&quot;extraActivities&quot;:[],&quot;grades&quot;:[{&quot;currentPhase&quot;:&quot;1&quot;,&quot;grade&quot;:10},{&quot;currentPhase&quot;:&quot;2&quot;,&quot;grade&quot;:8}],&quot;phases&quot;:[{&quot;currentPhase&quot;:&quot;1&quot;,&quot;deadline&quot;:&quot;10\/07\/2024&quot;,&quot;issues&quot;:[&quot;ideia&quot;,&quot; validação&quot;]},{&quot;currentPhase&quot;:&quot;2&quot;,&quot;deadline&quot;:&quot;10\/08\/2024&quot;,&quot;issues&quot;:[&quot;front&quot;,&quot; back&quot;,&quot; testes&quot;]}],&quot;advisorEmail&quot;:&quot;felipe@inatel.com&quot;,&quot;updatedAt&quot;:&quot;2024-06-25T01:08:53.079Z&quot;}]
 </div>   
 
   
@@ -1611,12 +1598,12 @@ classpath:testesAPI/RM.feature:61
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[8:70]</span>
-                <span class="scenario-name">Remove a member by email</span>
+                <span class="scenario-name">Get teams for a specific student</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>17</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>506</span>
             </div>
           </div>
           <div class="step-row">
@@ -1636,7 +1623,7 @@ classpath:testesAPI/RM.feature:61
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+        <span>*</span>&nbsp;<span>url &#39;https://ehosdevida-backend.onrender.com/&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1648,7 +1635,7 @@ classpath:testesAPI/RM.feature:61
 
   
 
-  <div class="preformatted" data-parent="0.4">19:17:30.990 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">15:43:26.063 karate.env system property was: null 
 </div>   
 
   
@@ -1665,7 +1652,7 @@ classpath:testesAPI/RM.feature:61
       <div class="step-ref passed">71</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;team123&#39;, &#39;members&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;teams&#39;, &#39;student&#39;, &#39;a@inatel.com&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -1693,10 +1680,10 @@ classpath:testesAPI/RM.feature:61
       <div class="step-ref passed">72</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request &#39;james@rocket.com&#39;</span>
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1721,10 +1708,10 @@ classpath:testesAPI/RM.feature:61
       <div class="step-ref passed">73</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c&#39;</span>
+        <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">505</div>
   </div>
 
    
@@ -1733,7 +1720,32 @@ classpath:testesAPI/RM.feature:61
 
   
 
-     
+  <div class="preformatted" data-parent="0.73">15:43:26.067 request:
+1 &gt; GET https://ehosdevida-backend.onrender.com/teams/student/a@inatel.com
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 &gt; Host: ehosdevida-backend.onrender.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:43:26.569 response time in milliseconds: 501
+1 &lt; 200
+1 &lt; Date: Tue, 25 Jun 2024 18:43:25 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: 89971a603f7ea420-GRU
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;26a-AxIKnkwtMxtFSeYy/sdOyNo7fs0&quot;
+1 &lt; Vary: Accept-Encoding
+1 &lt; rndr-id: 7b381849-9bfe-40e0
+1 &lt; x-powered-by: Express
+1 &lt; x-render-origin-server: Render
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;number&quot;:&quot;123&quot;,&quot;createdAt&quot;:&quot;2024-06-15T20:19:20.064Z&quot;,&quot;members&quot;:[{&quot;name&quot;:&quot;y&quot;,&quot;email&quot;:&quot;a@inatel.com&quot;},{&quot;name&quot;:&quot;b&quot;,&quot;email&quot;:&quot;b@inatel.com&quot;},{&quot;email&quot;:&quot;c@inatel.com&quot;},{&quot;name&quot;:&quot;d&quot;,&quot;email&quot;:&quot;d@inatel.com&quot;}],&quot;__v&quot;:0,&quot;name&quot;:&quot;HPF&quot;,&quot;_id&quot;:&quot;666df748efd5eaf98466dfe1&quot;,&quot;advisorName&quot;:&quot;Felipe&quot;,&quot;extraActivities&quot;:[],&quot;grades&quot;:[{&quot;currentPhase&quot;:&quot;1&quot;,&quot;grade&quot;:10},{&quot;currentPhase&quot;:&quot;2&quot;,&quot;grade&quot;:8}],&quot;phases&quot;:[{&quot;currentPhase&quot;:&quot;1&quot;,&quot;deadline&quot;:&quot;10\/07\/2024&quot;,&quot;issues&quot;:[&quot;ideia&quot;,&quot; validação&quot;]},{&quot;currentPhase&quot;:&quot;2&quot;,&quot;deadline&quot;:&quot;10\/08\/2024&quot;,&quot;issues&quot;:[&quot;front&quot;,&quot; back&quot;,&quot; testes&quot;]}],&quot;advisorEmail&quot;:&quot;felipe@inatel.com&quot;,&quot;updatedAt&quot;:&quot;2024-06-25T01:08:53.079Z&quot;}
+</div>   
 
   
 
@@ -1749,60 +1761,10 @@ classpath:testesAPI/RM.feature:61
       <div class="step-ref passed">74</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method delete</span>
-      </div>
-    </div>
-    <div class="time-cell passed">13</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.74">19:17:31.002 request:
-1 &gt; DELETE http://localhost:3000/teams/team123/members
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 &gt; Content-Type: text/plain; charset=UTF-8
-1 &gt; Content-Length: 16
-1 &gt; Host: localhost:3000
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
-james@rocket.com
-
-19:17:31.011 response time in milliseconds: 7
-1 &lt; 500
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 52
-1 &lt; ETag: W/&quot;34-rlKccw1E+/fV8niQk4oFitDfPro&quot;
-1 &lt; Date: Tue, 14 May 2024 22:17:31 GMT
-1 &lt; Connection: keep-alive
-1 &lt; Keep-Alive: timeout=5
-{&quot;message&quot;:&quot;Internal server error&quot;,&quot;statusCode&quot;:500}
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.75">
-      <div class="step-ref failed">75</div>
-      
-      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1811,12 +1773,7 @@ james@rocket.com
 
   
 
-  <div class="preformatted" data-parent="0.75">19:17:31.012 classpath:testesAPI/RM.feature:75
-Then status 200
-status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/team123/members, response: 
-{&quot;statusCode&quot;:500,&quot;message&quot;:&quot;Internal server error&quot;}
-classpath:testesAPI/RM.feature:75
-</div>   
+     
 
   
 

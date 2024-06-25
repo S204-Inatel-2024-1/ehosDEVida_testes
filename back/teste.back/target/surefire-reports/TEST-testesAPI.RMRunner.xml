@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="testesAPI.RMRunner" time="3.724" tests="8" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="testesAPI.RMRunner" time="6.997" tests="8" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\Inatel\P7\S204\ehosDEVida_testes\back\teste.back\target\test-classes;D:\Inatel\P7\S204\ehosDEVida_testes\back\teste.back\target\classes;C:\Users\analu\.m2\repository\com\intuit\karate\karate-junit5\1.0.1\karate-junit5-1.0.1.jar;C:\Users\analu\.m2\repository\com\intuit\karate\karate-core\1.0.1\karate-core-1.0.1.jar;C:\Users\analu\.m2\repository\org\graalvm\js\js-scriptengine\21.0.0\js-scriptengine-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\sdk\graal-sdk\21.0.0\graal-sdk-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\js\js\21.0.0\js-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\regex\regex\21.0.0\regex-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\truffle\truffle-api\21.0.0\truffle-api-21.0.0.jar;C:\Users\analu\.m2\repository\com\ibm\icu\icu4j\67.1\icu4j-67.1.jar;C:\Users\analu\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\analu\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\analu\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\analu\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\analu\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\analu\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\analu\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\analu\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\analu\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\analu\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\analu\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\analu\.m2\repository\de\siegmar\fastcsv\1.0.4\fastcsv-1.0.4.jar;C:\Users\analu\.m2\repository\info\picocli\picocli\4.5.2\picocli-4.5.2.jar;C:\Users\analu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\analu\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\analu\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\analu\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\analu\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\analu\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
+    <property name="java.class.path" value="D:\Inatel\P7\ehosDEVida_testes\back\teste.back\target\test-classes;D:\Inatel\P7\ehosDEVida_testes\back\teste.back\target\classes;C:\Users\analu\.m2\repository\com\intuit\karate\karate-junit5\1.0.1\karate-junit5-1.0.1.jar;C:\Users\analu\.m2\repository\com\intuit\karate\karate-core\1.0.1\karate-core-1.0.1.jar;C:\Users\analu\.m2\repository\org\graalvm\js\js-scriptengine\21.0.0\js-scriptengine-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\sdk\graal-sdk\21.0.0\graal-sdk-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\js\js\21.0.0\js-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\regex\regex\21.0.0\regex-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\truffle\truffle-api\21.0.0\truffle-api-21.0.0.jar;C:\Users\analu\.m2\repository\com\ibm\icu\icu4j\67.1\icu4j-67.1.jar;C:\Users\analu\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\analu\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\analu\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\analu\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\analu\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\analu\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\analu\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\analu\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\analu\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\analu\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\analu\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\analu\.m2\repository\de\siegmar\fastcsv\1.0.4\fastcsv-1.0.4.jar;C:\Users\analu\.m2\repository\info\picocli\picocli\4.5.2\picocli-4.5.2.jar;C:\Users\analu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\analu\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\analu\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\analu\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\analu\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\analu\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,10 +15,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\analu\AppData\Local\Temp\surefire11554614159252045229\surefirebooter16355683842306238857.jar C:\Users\analu\AppData\Local\Temp\surefire11554614159252045229 2024-05-14T19-17-26_883-jvmRun1 surefire315955299244817119tmp surefire_05407914622904318401tmp"/>
+    <property name="sun.java.command" value="C:\Users\analu\AppData\Local\Temp\surefire7939708773138224925\surefirebooter5375738354569188771.jar C:\Users\analu\AppData\Local\Temp\surefire7939708773138224925 2024-06-25T15-43-19_284-jvmRun1 surefire11750312530983260701tmp surefire_02343976998759642082tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="RMRunner"/>
-    <property name="surefire.test.class.path" value="D:\Inatel\P7\S204\ehosDEVida_testes\back\teste.back\target\test-classes;D:\Inatel\P7\S204\ehosDEVida_testes\back\teste.back\target\classes;C:\Users\analu\.m2\repository\com\intuit\karate\karate-junit5\1.0.1\karate-junit5-1.0.1.jar;C:\Users\analu\.m2\repository\com\intuit\karate\karate-core\1.0.1\karate-core-1.0.1.jar;C:\Users\analu\.m2\repository\org\graalvm\js\js-scriptengine\21.0.0\js-scriptengine-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\sdk\graal-sdk\21.0.0\graal-sdk-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\js\js\21.0.0\js-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\regex\regex\21.0.0\regex-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\truffle\truffle-api\21.0.0\truffle-api-21.0.0.jar;C:\Users\analu\.m2\repository\com\ibm\icu\icu4j\67.1\icu4j-67.1.jar;C:\Users\analu\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\analu\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\analu\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\analu\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\analu\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\analu\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\analu\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\analu\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\analu\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\analu\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\analu\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\analu\.m2\repository\de\siegmar\fastcsv\1.0.4\fastcsv-1.0.4.jar;C:\Users\analu\.m2\repository\info\picocli\picocli\4.5.2\picocli-4.5.2.jar;C:\Users\analu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\analu\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\analu\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\analu\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\analu\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\analu\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
+    <property name="surefire.test.class.path" value="D:\Inatel\P7\ehosDEVida_testes\back\teste.back\target\test-classes;D:\Inatel\P7\ehosDEVida_testes\back\teste.back\target\classes;C:\Users\analu\.m2\repository\com\intuit\karate\karate-junit5\1.0.1\karate-junit5-1.0.1.jar;C:\Users\analu\.m2\repository\com\intuit\karate\karate-core\1.0.1\karate-core-1.0.1.jar;C:\Users\analu\.m2\repository\org\graalvm\js\js-scriptengine\21.0.0\js-scriptengine-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\sdk\graal-sdk\21.0.0\graal-sdk-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\js\js\21.0.0\js-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\regex\regex\21.0.0\regex-21.0.0.jar;C:\Users\analu\.m2\repository\org\graalvm\truffle\truffle-api\21.0.0\truffle-api-21.0.0.jar;C:\Users\analu\.m2\repository\com\ibm\icu\icu4j\67.1\icu4j-67.1.jar;C:\Users\analu\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\analu\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\analu\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\analu\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\analu\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\analu\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\analu\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\analu\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\analu\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\analu\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\analu\.m2\repository\org\yaml\snakeyaml\1.27\snakeyaml-1.27.jar;C:\Users\analu\.m2\repository\de\siegmar\fastcsv\1.0.4\fastcsv-1.0.4.jar;C:\Users\analu\.m2\repository\info\picocli\picocli\4.5.2\picocli-4.5.2.jar;C:\Users\analu\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\analu\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\analu\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\analu\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\analu\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\analu\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\analu"/>
     <property name="user.language" value="pt"/>
@@ -26,12 +26,12 @@
     <property name="java.version.date" value="2023-01-17"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\Inatel\P7\S204\ehosDEVida_testes\back\teste.back"/>
+    <property name="basedir" value="D:\Inatel\P7\ehosDEVida_testes\back\teste.back"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\analu\AppData\Local\Temp\surefire11554614159252045229\surefirebooter16355683842306238857.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\analu\AppData\Local\Temp\surefire7939708773138224925\surefirebooter5375738354569188771.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\analu\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.6"/>
-    <property name="user.dir" value="D:\Inatel\P7\S204\ehosDEVida_testes\back\teste.back"/>
+    <property name="user.dir" value="D:\Inatel\P7\ehosDEVida_testes\back\teste.back"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -57,245 +57,282 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="[1:6] Login e captura do token" classname="testesAPI/RM" time="1.581">
-    <system-out><![CDATA[19:17:28.999 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-19:17:30.076 [main] INFO  com.intuit.karate - karate.env system property was: null 
-19:17:30.548 [main] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:3000/auth/login
+  <testcase name="[1:6] Login e captura do token" classname="testesAPI/RM" time="2.202">
+    <system-out><![CDATA[15:43:21.034 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:43:21.889 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:22.264 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ehosdevida-backend.onrender.com/auth/login
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 56
-1 > Host: localhost:3000
+1 > Content-Length: 53
+1 > Host: ehosdevida-backend.onrender.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 > Accept-Encoding: gzip,deflate
-{"password":"Fetin@2024","email":"amanda@ges.inatel.br"}
+{"password":"Fetin@2024","email":"felipe@inatel.com"}
 
-19:17:30.605 [main] DEBUG com.intuit.karate - response time in milliseconds: 51
+15:43:23.264 [main] DEBUG com.intuit.karate - response time in milliseconds: 996
 1 < 201
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
+1 < Date: Tue, 25 Jun 2024 18:43:21 GMT
 1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 660
-1 < ETag: W/"294-5hNpDxKjtf8Djv/W6Da9OGbYPiU"
-1 < Date: Tue, 14 May 2024 22:17:30 GMT
 1 < Connection: keep-alive
-1 < Keep-Alive: timeout=5
-1 < Set-Cookie: Authentication=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJuYW1lIjoiQW1hbmRhIiwiZW1haWwiOiJhbWFuZGFAZ2VzLmluYXRlbC5iciIsInBhc3N3b3JkIjoiJDJiJDEwJHFzWVA4SENkTHVWZmd6ckJSNmw2b2Vlc2VYeFY1cmJDSXpVN1BNTkRGMDl5aE9ueGhMa0E2Iiwicm9sZSI6InN0dWRlbnQiLCJ0ZWFtTnVtYmVyIjoiMTBBIiwiX192IjowLCJzdWIiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJpYXQiOjE3MTU3MjUwNTAsImV4cCI6MTcxNTk4NDI1MH0.DQjDE8sAi4qHFsYXNStYtk0g1q6rLYrIIo8dBTfEr8I; Domain=localhost
-{"acessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJuYW1lIjoiQW1hbmRhIiwiZW1haWwiOiJhbWFuZGFAZ2VzLmluYXRlbC5iciIsInBhc3N3b3JkIjoiJDJiJDEwJHFzWVA4SENkTHVWZmd6ckJSNmw2b2Vlc2VYeFY1cmJDSXpVN1BNTkRGMDl5aE9ueGhMa0E2Iiwicm9sZSI6InN0dWRlbnQiLCJ0ZWFtTnVtYmVyIjoiMTBBIiwiX192IjowLCJzdWIiOiI2NjQzYmJmZGNhMDEyMzA5MWUwODgwYTkiLCJpYXQiOjE3MTU3MjUwNTAsImV4cCI6MTcxNTk4NDI1MH0.DQjDE8sAi4qHFsYXNStYtk0g1q6rLYrIIo8dBTfEr8I","user":{"password":"$2b$10$qsYP8HCdLuVfgzrBR6l6oeeseXxV5rbCIzU7PMNDF09yhOnxhLkA6","role":"student","__v":0,"name":"Amanda","teamNumber":"10A","_id":"6643bbfdca0123091e0880a9","email":"amanda@ges.inatel.br"}}
+1 < CF-Ray: 89971a496920a4d1-GRU
+1 < CF-Cache-Status: DYNAMIC
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"261-3FekCOzYjEdVscI0s/zSfemsBfY"
+1 < Vary: Accept-Encoding
+1 < rndr-id: d94ed009-f8b0-43e6
+1 < x-powered-by: Express
+1 < x-render-origin-server: Render
+1 < Server: cloudflare
+1 < alt-svc: h3=":443"; ma=86400
+1 < Set-Cookie: Authentication=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZjc0N2VmZDVlYWY5ODQ2NmRmZGYiLCJuYW1lIjoiRmVsaXBlIiwiZW1haWwiOiJmZWxpcGVAaW5hdGVsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJDJBOXU4SllZS1dtQ3IzcWh0QTgxUE9SUHZld2tXL2F6RXFWd25RczFRRUU4TFA4OWIzQ3IuIiwicm9sZSI6ImFkdmlzb3IiLCJfX3YiOjAsInN1YiI6IjY2NmRmNzQ3ZWZkNWVhZjk4NDY2ZGZkZiIsImlhdCI6MTcxOTM0MTAwMSwiZXhwIjoxNzE5NjAwMjAxfQ.jL1lr94pPfZfLtO6kfow48FIN9iajfSkLhqnCLPIxkU; Domain=ehosdevida-backend.onrender.com
+{"acessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZjc0N2VmZDVlYWY5ODQ2NmRmZGYiLCJuYW1lIjoiRmVsaXBlIiwiZW1haWwiOiJmZWxpcGVAaW5hdGVsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJDJBOXU4SllZS1dtQ3IzcWh0QTgxUE9SUHZld2tXL2F6RXFWd25RczFRRUU4TFA4OWIzQ3IuIiwicm9sZSI6ImFkdmlzb3IiLCJfX3YiOjAsInN1YiI6IjY2NmRmNzQ3ZWZkNWVhZjk4NDY2ZGZkZiIsImlhdCI6MTcxOTM0MTAwMSwiZXhwIjoxNzE5NjAwMjAxfQ.jL1lr94pPfZfLtO6kfow48FIN9iajfSkLhqnCLPIxkU","user":{"password":"$2b$10$2A9u8JYYKWmCr3qhtA81PORPvewkW\/azEqVwnQs1QEE8LP89b3Cr.","role":"advisor","__v":0,"name":"Felipe","_id":"666df747efd5eaf98466dfdf","email":"felipe@inatel.com"}}
 ]]></system-out>
   </testcase>
-  <testcase name="[2:14] POST do USER (admin ou student)" classname="testesAPI/RM" time="0.187">
-    <system-out><![CDATA[19:17:30.632 [main] INFO  com.intuit.karate - karate.env system property was: null 
-19:17:30.685 [main] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:3000/users
-1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 154
-1 > Host: localhost:3000
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-1 > Accept-Encoding: gzip,deflate
-{"role":"#(randomRole())","name":"#(randomFirstName())","teamNumber":"#(randomTeamNumber())","email":"#(randomEmail(randomFirstName(),randomlastName()))"}
-
-19:17:30.808 [main] DEBUG com.intuit.karate - response time in milliseconds: 122
-1 < 201
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 269
-1 < ETag: W/"10d-uBsKCwfFggWOYFTcS/bXbXCZDZ8"
-1 < Date: Tue, 14 May 2024 22:17:30 GMT
-1 < Connection: keep-alive
-1 < Keep-Alive: timeout=5
-{"password":"$2b$10$MAdsFhQOaI8w0lN7nRDZ3OHZMB9QU6KaaKkZI.eeJB53jxEvO83uS","role":"#(randomRole())","__v":0,"name":"#(randomFirstName())","teamNumber":"#(randomTeamNumber())","_id":"6643e2fac252f6f9e4195cb5","email":"#(randomEmail(randomFirstName(),randomlastName()))"}
-]]></system-out>
-  </testcase>
-  <testcase name="[3:38] GET do usuário por e-mail" classname="testesAPI/RM" time="0.037">
-    <system-out><![CDATA[19:17:30.820 [main] INFO  com.intuit.karate - karate.env system property was: null 
-19:17:30.825 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:3000/users/juri%40gmail.com
-1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 > Host: localhost:3000
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-1 > Accept-Encoding: gzip,deflate
-
-
-19:17:30.845 [main] DEBUG com.intuit.karate - response time in milliseconds: 20
-1 < 200
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 173
-1 < ETag: W/"ad-KkKEIjtzdG7SbHhpKksYwPKses4"
-1 < Date: Tue, 14 May 2024 22:17:30 GMT
-1 < Connection: keep-alive
-1 < Keep-Alive: timeout=5
-{"password":"$2b$10$oSbCssMFXZhJ4HLPsSzatuk5oYvDstQOq3bANO0OZ\/PT5we36K5Ta","role":"admin","__v":0,"name":"Jurandi","_id":"66400883acfd6d2e7ae8c233","email":"juri@gmail.com"}
-]]></system-out>
-  </testcase>
-  <testcase name="[4:44] Get list of all teams" classname="testesAPI/RM" time="0.025">
-    <system-out><![CDATA[19:17:30.859 [main] INFO  com.intuit.karate - karate.env system property was: null 
-19:17:30.863 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:3000/teams
-1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 > Host: localhost:3000
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-1 > Accept-Encoding: gzip,deflate
-
-
-19:17:30.870 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
-1 < 200
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 348
-1 < ETag: W/"15c-eajFXGLlY96GdQpZ6vP070yE280"
-1 < Date: Tue, 14 May 2024 22:17:30 GMT
-1 < Connection: keep-alive
-1 < Keep-Alive: timeout=5
-[{"number":"12","delivery":[],"createdAt":"2024-05-14T21:40:07.697Z","members":[{"name":"Lucileia","email":"luci@gmail.com"}],"__v":0,"name":"Rolezin","_id":"6643da37c252f6f9e4195c6c","advisorName":"Marcelo","extraActivities":["APP Inventor"],"advisorEmail":"marcelo@gmail.com","status":"Em Desenvolvimento","updatedAt":"2024-05-14T21:40:07.697Z"}]
-]]></system-out>
-  </testcase>
-  <testcase name="[5:51] Get team details" classname="testesAPI/RM" time="0.025">
-    <system-out><![CDATA[19:17:30.882 [main] INFO  com.intuit.karate - karate.env system property was: null 
-19:17:30.886 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:3000/teams/12
-1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 > Host: localhost:3000
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
-1 > Accept-Encoding: gzip,deflate
-
-
-19:17:30.898 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
-1 < 200
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 346
-1 < ETag: W/"15a-rjTfPwK5eu2UmSQXYoMvFUpzaZk"
-1 < Date: Tue, 14 May 2024 22:17:30 GMT
-1 < Connection: keep-alive
-1 < Keep-Alive: timeout=5
-{"number":"12","delivery":[],"createdAt":"2024-05-14T21:40:07.697Z","members":[{"name":"Lucileia","email":"luci@gmail.com"}],"__v":0,"name":"Rolezin","_id":"6643da37c252f6f9e4195c6c","advisorName":"Marcelo","extraActivities":["APP Inventor"],"advisorEmail":"marcelo@gmail.com","status":"Em Desenvolvimento","updatedAt":"2024-05-14T21:40:07.697Z"}
-]]></system-out>
-  </testcase>
-  <testcase name="[6:57] Deletando time pelo ID" classname="testesAPI/RM" time="0.032">
+  <testcase name="[2:13] POST do USER (admin ou student)" classname="testesAPI/RM" time="0.379">
     <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/12, response: 
+status code was: 500, expected: 201, response time in milliseconds: 312, url: https://ehosdevida-backend.onrender.com/users, response: 
 {"statusCode":500,"message":"Internal server error"}
+classpath:testesAPI/RM.feature:34
+]]></failure>
+    <system-out><![CDATA[15:43:23.284 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:23.336 [main] DEBUG com.intuit.karate - request:
+1 > POST https://ehosdevida-backend.onrender.com/users
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 98
+1 > Host: ehosdevida-backend.onrender.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"password":"Fetin@2024","role":"admin","teamNumber":18,"username":"85.43382780515822@inatel.com"}
+
+15:43:23.648 [main] DEBUG com.intuit.karate - response time in milliseconds: 312
+1 < 500
+1 < Date: Tue, 25 Jun 2024 18:43:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Connection: keep-alive
+1 < CF-Ray: 89971a4f3df2af5f-GRU
+1 < CF-Cache-Status: DYNAMIC
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"34-rlKccw1E+/fV8niQk4oFitDfPro"
+1 < Vary: Accept-Encoding
+1 < rndr-id: 10e609a3-ad33-4bb6
+1 < x-powered-by: Express
+1 < x-render-origin-server: Render
+1 < Server: cloudflare
+1 < alt-svc: h3=":443"; ma=86400
+{"message":"Internal server error","statusCode":500}
+15:43:23.649 [main] ERROR com.intuit.karate - classpath:testesAPI/RM.feature:34
+Then status 201
+status code was: 500, expected: 201, response time in milliseconds: 312, url: https://ehosdevida-backend.onrender.com/users, response: 
+{"statusCode":500,"message":"Internal server error"}
+classpath:testesAPI/RM.feature:34
+]]></system-out>
+  </testcase>
+  <testcase name="[3:37] GET do usuário por e-mail" classname="testesAPI/RM" time="0.512">
+    <system-out><![CDATA[15:43:23.666 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:23.669 [main] DEBUG com.intuit.karate - request:
+1 > GET https://ehosdevida-backend.onrender.com/users/a@inatel.com
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 > Host: ehosdevida-backend.onrender.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:43:24.171 [main] DEBUG com.intuit.karate - response time in milliseconds: 501
+1 < 200
+1 < Date: Tue, 25 Jun 2024 18:43:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Connection: keep-alive
+1 < CF-Ray: 89971a514a83031a-GRU
+1 < CF-Cache-Status: DYNAMIC
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"a7-vPXUZbCJmZmTSkSq6DkKqEJ2FGM"
+1 < Vary: Accept-Encoding
+1 < rndr-id: 7d8a4fa9-a4cd-441b
+1 < x-powered-by: Express
+1 < x-render-origin-server: Render
+1 < Server: cloudflare
+1 < alt-svc: h3=":443"; ma=86400
+{"password":"$2b$10$P9JRcMgBpY5F3MHl3vbHB.9YpH7ZaCp915.Y0GE.J.Z\/o9Q25dOKO","role":"student","__v":0,"name":"a","_id":"666df748efd5eaf98466dfe7","email":"a@inatel.com"}
+]]></system-out>
+  </testcase>
+  <testcase name="[4:44] Get list of all teams" classname="testesAPI/RM" time="0.565">
+    <system-out><![CDATA[15:43:24.201 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:24.204 [main] DEBUG com.intuit.karate - request:
+1 > GET https://ehosdevida-backend.onrender.com/teams
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 > Host: ehosdevida-backend.onrender.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:43:24.737 [main] DEBUG com.intuit.karate - response time in milliseconds: 530
+1 < 200
+1 < Date: Tue, 25 Jun 2024 18:43:23 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Connection: keep-alive
+1 < CF-Ray: 89971a54acdea466-GRU
+1 < CF-Cache-Status: DYNAMIC
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"424-x3a5rP5n6YRGiA5j3Lc+7j+JdMA"
+1 < Vary: Accept-Encoding
+1 < rndr-id: 71f4ee79-3bbf-4fcb
+1 < x-powered-by: Express
+1 < x-render-origin-server: Render
+1 < Server: cloudflare
+1 < alt-svc: h3=":443"; ma=86400
+[{"number":"123","createdAt":"2024-06-15T20:19:20.064Z","members":[{"name":"y","email":"a@inatel.com"},{"name":"b","email":"b@inatel.com"},{"email":"c@inatel.com"},{"name":"d","email":"d@inatel.com"}],"__v":0,"name":"HPF","_id":"666df748efd5eaf98466dfe1","advisorName":"Felipe","extraActivities":[],"grades":[{"currentPhase":"1","grade":10},{"currentPhase":"2","grade":8}],"phases":[{"currentPhase":"1","deadline":"10\/07\/2024","issues":["ideia"," validação"]},{"currentPhase":"2","deadline":"10\/08\/2024","issues":["front"," back"," testes"]}],"advisorEmail":"felipe@inatel.com","updatedAt":"2024-06-25T01:08:53.079Z"},{"number":"10","createdAt":"2024-06-25T00:45:38.846Z","members":[{"name":"Ana Luiza","email":"a@inatel.com"},{"name":"Mateus Rodrigues","email":"a@inatel.com"},{"email":"a@inatel.com"},{"name":"Jessica Jones","email":"a@inatel.com"}],"__v":0,"name":"Smart House","_id":"667a133210e1a84099bac4ee","advisorName":"Jurandir","extraActivities":[],"grades":[],"phases":[],"advisorEmail":"admin@inatel.com","updatedAt":"2024-06-25T00:45:38.846Z"}]
+]]></system-out>
+  </testcase>
+  <testcase name="[5:51] Get team details" classname="testesAPI/RM" time="0.506">
+    <system-out><![CDATA[15:43:24.751 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:24.753 [main] DEBUG com.intuit.karate - request:
+1 > GET https://ehosdevida-backend.onrender.com/teams/HPF
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 > Host: ehosdevida-backend.onrender.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:43:25.244 [main] DEBUG com.intuit.karate - response time in milliseconds: 490
+1 < 200
+1 < Date: Tue, 25 Jun 2024 18:43:23 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < CF-Ray: 89971a580bd70118-GRU
+1 < CF-Cache-Status: DYNAMIC
+1 < Access-Control-Allow-Origin: *
+1 < rndr-id: 6f75e4ad-7b4c-4b1b
+1 < x-powered-by: Express
+1 < x-render-origin-server: Render
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < alt-svc: h3=":443"; ma=86400
+
+]]></system-out>
+  </testcase>
+  <testcase name="[6:57] Deletando time pelo ID" classname="testesAPI/RM" time="0.301">
+    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 291, url: https://ehosdevida-backend.onrender.com/teams/, response: 
+{"message":"Cannot DELETE /teams/","error":"Not Found","statusCode":404}
 classpath:testesAPI/RM.feature:61
 ]]></failure>
-    <system-out><![CDATA[19:17:30.911 [main] INFO  com.intuit.karate - karate.env system property was: null 
-19:17:30.915 [main] DEBUG com.intuit.karate - request:
-1 > DELETE http://localhost:3000/teams/12
-1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 > Host: localhost:3000
+    <system-out><![CDATA[15:43:25.251 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:25.254 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://ehosdevida-backend.onrender.com/teams/
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 > Host: ehosdevida-backend.onrender.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 > Accept-Encoding: gzip,deflate
 
 
-19:17:30.924 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
-1 < 500
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
+15:43:25.545 [main] DEBUG com.intuit.karate - response time in milliseconds: 291
+1 < 404
+1 < Date: Tue, 25 Jun 2024 18:43:24 GMT
 1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 52
-1 < ETag: W/"34-rlKccw1E+/fV8niQk4oFitDfPro"
-1 < Date: Tue, 14 May 2024 22:17:30 GMT
 1 < Connection: keep-alive
-1 < Keep-Alive: timeout=5
-{"message":"Internal server error","statusCode":500}
-19:17:30.927 [main] ERROR com.intuit.karate - classpath:testesAPI/RM.feature:61
+1 < CF-Ray: 89971a5b2dc4af50-GRU
+1 < CF-Cache-Status: DYNAMIC
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"48-cKoNVgR3Ub0+WQTiaptIg7t+mzU"
+1 < Vary: Accept-Encoding
+1 < rndr-id: 357ca098-27cc-4bc9
+1 < x-powered-by: Express
+1 < x-render-origin-server: Render
+1 < Server: cloudflare
+1 < alt-svc: h3=":443"; ma=86400
+{"message":"Cannot DELETE \/teams\/","error":"Not Found","statusCode":404}
+15:43:25.546 [main] ERROR com.intuit.karate - classpath:testesAPI/RM.feature:61
 Then status 200
-status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/12, response: 
-{"statusCode":500,"message":"Internal server error"}
+status code was: 404, expected: 200, response time in milliseconds: 291, url: https://ehosdevida-backend.onrender.com/teams/, response: 
+{"message":"Cannot DELETE /teams/","error":"Not Found","statusCode":404}
 classpath:testesAPI/RM.feature:61
 ]]></system-out>
   </testcase>
-  <testcase name="[7:63] Get teams for a specific advisor" classname="testesAPI/RM" time="0.033">
-    <system-out><![CDATA[19:17:30.950 [main] INFO  com.intuit.karate - karate.env system property was: null 
-19:17:30.956 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:3000/teams/advisor/giovanni@rocket.com
-1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 > Host: localhost:3000
+  <testcase name="[7:63] Get teams for a specific advisor" classname="testesAPI/RM" time="0.51">
+    <system-out><![CDATA[15:43:25.553 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:25.556 [main] DEBUG com.intuit.karate - request:
+1 > GET https://ehosdevida-backend.onrender.com/teams/advisor/felipe@inatel.com
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 > Host: ehosdevida-backend.onrender.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 > Accept-Encoding: gzip,deflate
 
 
-19:17:30.973 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+15:43:26.056 [main] DEBUG com.intuit.karate - response time in milliseconds: 499
 1 < 200
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
+1 < Date: Tue, 25 Jun 2024 18:43:24 GMT
 1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 2
-1 < ETag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
-1 < Date: Tue, 14 May 2024 22:17:30 GMT
 1 < Connection: keep-alive
-1 < Keep-Alive: timeout=5
-[]
+1 < CF-Ray: 89971a5d1f0f0134-GRU
+1 < CF-Cache-Status: DYNAMIC
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"26c-WK5VD5PF/7ChsUutf2TpWnP+v40"
+1 < Vary: Accept-Encoding
+1 < rndr-id: 13f59268-5bdf-490a
+1 < x-powered-by: Express
+1 < x-render-origin-server: Render
+1 < Server: cloudflare
+1 < alt-svc: h3=":443"; ma=86400
+[{"number":"123","createdAt":"2024-06-15T20:19:20.064Z","members":[{"name":"y","email":"a@inatel.com"},{"name":"b","email":"b@inatel.com"},{"email":"c@inatel.com"},{"name":"d","email":"d@inatel.com"}],"__v":0,"name":"HPF","_id":"666df748efd5eaf98466dfe1","advisorName":"Felipe","extraActivities":[],"grades":[{"currentPhase":"1","grade":10},{"currentPhase":"2","grade":8}],"phases":[{"currentPhase":"1","deadline":"10\/07\/2024","issues":["ideia"," validação"]},{"currentPhase":"2","deadline":"10\/08\/2024","issues":["front"," back"," testes"]}],"advisorEmail":"felipe@inatel.com","updatedAt":"2024-06-25T01:08:53.079Z"}]
 ]]></system-out>
   </testcase>
-  <testcase name="[8:70] Remove a member by email" classname="testesAPI/RM" time="1.033">
-    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/team123/members, response: 
-{"statusCode":500,"message":"Internal server error"}
-classpath:testesAPI/RM.feature:75
-]]></failure>
-    <system-out><![CDATA[19:17:30.988 [main] INFO  com.intuit.karate - karate.env system property was: null 
-19:17:31.001 [main] DEBUG com.intuit.karate - request:
-1 > DELETE http://localhost:3000/teams/team123/members
-1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjQwMDg4M2FjZmQ2ZDJlN2FlOGMyMzMiLCJuYW1lIjoiSnVyYW5kaSIsImVtYWlsIjoianVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRvU2JDc3NNRlhaaEo0SExQc1N6YXR1azVvWXZEc3RRT3EzYkFOTzBPWi9QVDV3ZTM2SzVUYSIsInJvbGUiOiJhZG1pbiIsIl9fdiI6MCwic3ViIjoiNjY0MDA4ODNhY2ZkNmQyZTdhZThjMjMzIiwiaWF0IjoxNzE1NzIxMzQyLCJleHAiOjE3MTU5ODA1NDJ9.QCvO_QEjiMcHFUOv259J-2AeUTkTr6dvwjzbutTTn1c
-1 > Content-Type: text/plain; charset=UTF-8
-1 > Content-Length: 16
-1 > Host: localhost:3000
+  <testcase name="[8:70] Get teams for a specific student" classname="testesAPI/RM" time="1.361">
+    <system-out><![CDATA[15:43:26.063 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:26.066 [main] DEBUG com.intuit.karate - request:
+1 > GET https://ehosdevida-backend.onrender.com/teams/student/a@inatel.com
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o
+1 > Host: ehosdevida-backend.onrender.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
 1 > Accept-Encoding: gzip,deflate
-james@rocket.com
 
-19:17:31.010 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
-1 < 500
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
+
+15:43:26.569 [main] DEBUG com.intuit.karate - response time in milliseconds: 501
+1 < 200
+1 < Date: Tue, 25 Jun 2024 18:43:25 GMT
 1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 52
-1 < ETag: W/"34-rlKccw1E+/fV8niQk4oFitDfPro"
-1 < Date: Tue, 14 May 2024 22:17:31 GMT
 1 < Connection: keep-alive
-1 < Keep-Alive: timeout=5
-{"message":"Internal server error","statusCode":500}
-19:17:31.012 [main] ERROR com.intuit.karate - classpath:testesAPI/RM.feature:75
-Then status 200
-status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/team123/members, response: 
-{"statusCode":500,"message":"Internal server error"}
-classpath:testesAPI/RM.feature:75
+1 < CF-Ray: 89971a603f7ea420-GRU
+1 < CF-Cache-Status: DYNAMIC
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"26a-AxIKnkwtMxtFSeYy/sdOyNo7fs0"
+1 < Vary: Accept-Encoding
+1 < rndr-id: 7b381849-9bfe-40e0
+1 < x-powered-by: Express
+1 < x-render-origin-server: Render
+1 < Server: cloudflare
+1 < alt-svc: h3=":443"; ma=86400
+{"number":"123","createdAt":"2024-06-15T20:19:20.064Z","members":[{"name":"y","email":"a@inatel.com"},{"name":"b","email":"b@inatel.com"},{"email":"c@inatel.com"},{"name":"d","email":"d@inatel.com"}],"__v":0,"name":"HPF","_id":"666df748efd5eaf98466dfe1","advisorName":"Felipe","extraActivities":[],"grades":[{"currentPhase":"1","grade":10},{"currentPhase":"2","grade":8}],"phases":[{"currentPhase":"1","deadline":"10\/07\/2024","issues":["ideia"," validação"]},{"currentPhase":"2","deadline":"10\/08\/2024","issues":["front"," back"," testes"]}],"advisorEmail":"felipe@inatel.com","updatedAt":"2024-06-25T01:08:53.079Z"}
 ---------------------------------------------------------
 feature: classpath:testesAPI/RM.feature
-scenarios:  8 | passed:  6 | failed:  2 | time: 0,7818
+scenarios:  8 | passed:  6 | failed:  2 | time: 4,5483
 ---------------------------------------------------------
 
 Karate version: 1.0.1
 ======================================================
-elapsed:   3,06 | threads:    1 | thread time: 0,78 
-features:     1 | skipped:    0 | efficiency: 0,26
+elapsed:   6,32 | threads:    1 | thread time: 4,55 
+features:     1 | skipped:    0 | efficiency: 0,72
 scenarios:    8 | passed:     6 | failed: 2
 ======================================================
 >>> failed features:
-status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/12, response: 
+status code was: 500, expected: 201, response time in milliseconds: 312, url: https://ehosdevida-backend.onrender.com/users, response: 
 {"statusCode":500,"message":"Internal server error"}
+classpath:testesAPI/RM.feature:34
+status code was: 404, expected: 200, response time in milliseconds: 291, url: https://ehosdevida-backend.onrender.com/teams/, response: 
+{"message":"Cannot DELETE /teams/","error":"Not Found","statusCode":404}
 classpath:testesAPI/RM.feature:61
-status code was: 500, expected: 200, response time in milliseconds: 7, url: http://localhost:3000/teams/team123/members, response: 
-{"statusCode":500,"message":"Internal server error"}
-classpath:testesAPI/RM.feature:75
 <<<
 
 HTML report: (paste into browser to view) | Karate version: 1.0.1
-file:///D:/Inatel/P7/S204/ehosDEVida_testes/back/teste.back/target/karate-reports/karate-summary.html
+file:///D:/Inatel/P7/ehosDEVida_testes/back/teste.back/target/karate-reports/karate-summary.html
 ===================================================================
 
 ]]></system-out>
