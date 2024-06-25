@@ -67,3 +67,32 @@ import 'cypress-mochawesome-reporter/register';
 ./node_modules/.bin/cypress run --spec 'cypress/e2e/**/'
 ```
 6. Abrir o arquivo index.html gerado
+
+
+## Instalação dos ambientes de desenvolvimento:
+1. IDE VSCode (code):
+https://code.visualstudio.com/
+
+2. JDK (java):
+https://www.oracle.com/java/technologies/javase-downloads.html
+
+3. Maeven:
+https://maven.apache.org
+
+4. Git Bash (Git for Windows - mais leve) 
+https://gitforwindows.org/
+
+
+## Executando os Testes
+
+Para executar os testes, basta rodar a seguinte linha no terminal:
+
+```
+mvn test -Dtest=RMRunner
+```
+O arquivo RM.feature contem todos os testes a serem realizados.
+
+## Relatórios de Teste
+
+Após a execução dos testes, você pode encontrar os relatórios de teste no diretório `\target\karate-reports\testesAPI.RM.html`. Basta abrir este arquivo no navegador para visualizar o resultado dos testes.
+
