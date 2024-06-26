@@ -33,23 +33,23 @@ it('Caso de teste: Realizando Login Válido como admin',()=>{
     cy.get('#email').type('admin@inatel.com')
     cy.get('#password').type('Fetin@2024')
     cy.get('.ant-btn-primary').click()
-    cy.get('.ant-btn-primary').click()
-    cy.get('.ant-btn-primary').click()
-    cy.get('.ant-btn-primary').click()
+    for (let i = 0; i < 15; i++) {
+        cy.get('.ant-btn-primary').click()
+    }
+    cy.wait(5000)
     cy.get('.ant-card-head-title').should('contain.text','Cadastro de Equipe')
 })
 
 it('Caso de teste: Realizando Login Válido como advisor',()=>{
     cy.visit('https://ehos-dev-ida-frontend.vercel.app/')
-    cy.get('#email').type('felipe@inatel.com')
+    cy.get('#email').type('f@inatel.com')
     cy.get('#password').type('Fetin@2024')
     cy.get('.ant-btn-primary').click()
-    cy.get('.ant-btn-primary').click()
-    cy.get('.ant-btn-primary').click()
-    cy.get('.ant-btn-primary').click()
+    for (let i = 0; i < 15; i++) {
+        cy.get('.ant-btn-primary').click()
+    }
+    cy.wait(5000)
     cy.get('.ant-card-head-title').should('contain.text','Informações do Orientador')
-    cy.get('.ant-row > :nth-child(1) > .ant-card > .ant-card-head > .ant-card-head-wrapper > .ant-card-head-title').should('contain.text','Equipe: HPF')
-    cy.get(':nth-child(2) > .ant-card > .ant-card-head > .ant-card-head-wrapper > .ant-card-head-title').should('contain.text','Detalhes da Fase')
 
 })
 

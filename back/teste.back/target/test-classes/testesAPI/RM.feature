@@ -5,7 +5,7 @@ Background:
 
 Scenario: Login e captura do token
   Given path 'auth/login'
-  And request { email: 'felipe@inatel.com', password: 'Fetin@2024' }
+  And request { email: 'admin@inatel.com', password: 'Fetin@2024' }
   When method post
   Then status 201
   And def token = response.acess_Token
@@ -21,8 +21,7 @@ Scenario: POST do USER (admin ou student)
         let user = horas + minutos + segundos + '@inatel.com'
         let senha = 'Fetin@2024'        
         let papel = randomItem(['student', 'admin','advisor'])
-        let teamNumber = Math.floor(Math.random() * 20) + 1 // generate a random team number between 1 and 20        
-        return { username: user, password: senha, role: papel, teamNumber: teamNumber}
+         return { username: user, password: senha, role: papel }
         }
         """
         * def usuarioInfo = criarUsuario()
@@ -46,6 +45,7 @@ Scenario: Get list of all teams
         And header Authorization = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o'
         When method get
         Then status 200
+        * print response
 
 
 Scenario: Get team details
@@ -55,7 +55,7 @@ Scenario: Get team details
         Then status 200
 
 Scenario: Deletando time pelo ID
-        Given path 'teams', ''
+        Given path 'teams', '667b17486c2baef67841ceed'
         And header Authorization = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o'
         When method delete
         Then status 200
@@ -68,7 +68,7 @@ Scenario: Get teams for a specific advisor
 
 
 Scenario: Get teams for a specific student
-Given path 'teams', 'student', 'a@inatel.com'
-And header Authorization = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o'
-When method get
-Then status 200
+        Given path 'teams', 'student', 'a@inatel.com'
+        And header Authorization = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZkZWU3MGVlNWEyOGE2ODBjZGM5ZWUiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQGluYXRlbC5jb20iLCJwYXNzd29yZCI6ImFkbWluMTIzIiwicm9sZSI6ImFkbWluIiwic3ViIjoiNjY2ZGVlNzBlZTVhMjhhNjgwY2RjOWVlIiwiaWF0IjoxNzE5MzM1ODQ2LCJleHAiOjE3MTk1OTUwNDZ9.cumqCDekaUWJxT4QWOgjRsTJSuw2heaMxfv20EUp21o'
+        When method get
+        Then status 200

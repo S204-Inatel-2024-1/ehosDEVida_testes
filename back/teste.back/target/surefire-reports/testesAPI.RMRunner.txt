@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: testesAPI.RMRunner
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.997 s <<< FAILURE! - in testesAPI.RMRunner
-testesAPI/RM.[2:13] POST do USER (admin ou student)  Time elapsed: 0.379 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-status code was: 500, expected: 201, response time in milliseconds: 312, url: https://ehosdevida-backend.onrender.com/users, response: 
-{"statusCode":500,"message":"Internal server error"}
-classpath:testesAPI/RM.feature:34
-
-testesAPI/RM.[6:57] Deletando time pelo ID  Time elapsed: 0.301 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-status code was: 404, expected: 200, response time in milliseconds: 291, url: https://ehosdevida-backend.onrender.com/teams/, response: 
-{"message":"Cannot DELETE /teams/","error":"Not Found","statusCode":404}
-classpath:testesAPI/RM.feature:61
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.414 s - in testesAPI.RMRunner
